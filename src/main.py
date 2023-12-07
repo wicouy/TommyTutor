@@ -43,7 +43,7 @@ async def listen():
                 await asyncio.sleep(0.1)  # Esperar hasta que se presione la tecla de activación
 
             if is_listening:
-                print("Escuchando... Presiona la tecla de activación nuevamente para transcribir.")
+                print(f"Escuchando... Presiona la tecla {activation_key_name} nuevamente para transcribir.")
                 audio_data = []
                 while is_listening and not exit_program:
                     try:
@@ -61,7 +61,7 @@ async def listen():
                     except sr.UnknownValueError:
                         print("Lo siento, no pude entender el audio.")
                     except sr.RequestError as e:
-                        print(f"Error en el servicio de Google; {e}")
+                        print(f"Error en el servicio...; {e}")
 
     print("Finalizando el programa...")
 
