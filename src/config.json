@@ -1,0 +1,11 @@
+{
+    "language": "es-ES",
+    "activation_key": {
+        "code": "space",
+        "name": "Espaciadora"
+    },
+    "exit_key": {
+        "code": "esc",
+        "name": "Escape"
+    }
+}
